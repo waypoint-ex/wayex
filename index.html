@@ -160,10 +160,29 @@
 <hr>
 <section class="section">
   <div class="container is-max-desktop">
+    <h2 class="title is-3">Proximal Waypoint</h2> 
+    <div class="content has-text-justified">
+          <p>
+            We will use the provided demonstration during training by locating waypoints that are "proximal" to our current state. Two points are considered "proximal" if they fall within a given distance of each other.
+          </p>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-half-width">
+        <img src="./static/images/proximal_waypoint.jpg"/>
+      </div>
+      <div class="column is-half-width">
+        <img src="./static/images/non_proximal_waypoint.jpg"/>
+      </div>
+    </div>
+  </div>
+
+</section>
+<hr>
+<section class="section">
+  <div class="container is-max-desktop">
     <h2 class="title is-3">Results</h2>
     <div class="content has-text-justified">
-        <p> *Results for RS-Lift differ from paper because after fine tuning the parameters we found that despite the rotation aspect our model still is able to outperform other methods with 1 demonstration and reach similar results when those methods have 100 demonstrations</p>
-        <p> **In all graphs our method uses only one demonstration </p>
       </div>
 
      <div class="columns is-centered">
