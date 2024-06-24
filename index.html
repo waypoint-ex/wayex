@@ -178,6 +178,32 @@
   </div>
 
 </section>
+
+  <hr>
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Proximal Reward Function</h2> 
+    <div class="content has-text-justified">
+          <p>
+            Once we have determined if two points are proximal we can use this information to find the reward for each state during training. 
+            We model this reward off a sparse reward. If we assume that if the reward is 0 at the last frame of the expert trajectory and -1 at all other frames we can compute the pseudo ground truth reward for each frame and apply this reward to all proximal waypoints.
+            If the two points are proximal and the waypoint is at step t in an episode of length l the reward is as follows.
+          </p>
+      <img src="/cgi-bin/mathtex.cgi?\displaystyle\sum_{i=0}^{l_\text{D} - t} -\gamma^i"alt="" border=0 align="middle">
+
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-half-width">
+        <img src="./static/images/proximal_waypoint.jpg"/>
+      </div>
+      <div class="column is-half-width">
+        <img src="./static/images/non_proximal_waypoint.jpg"/>
+      </div>
+    </div>
+  </div>
+
+</section>
 <hr>
 <section class="section">
   <div class="container is-max-desktop">
