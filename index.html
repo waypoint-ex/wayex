@@ -212,6 +212,46 @@
   </div>
 
 </section>
+
+  <hr>
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Expansion</h2> 
+    <div class="content has-text-justified">
+          <p>
+            When the first part of training is done the policy will have learned how to trace the expert trajectory.
+          </p>
+    </div>
+
+    <div class="columns is-centered">
+      <img src="./static/images/traced_policy.jpg"/>
+    </div>
+
+    <div class="content has-text-justified">
+          <p>
+            From here we want to expand the policy to cover a larger range of start and end states. We do this by applying increasing amounts of noise to the start and goal state so long as the success rate stays high.
+          </p>
+    </div>
+
+    <div class="columns is-centered">
+      <img src="./static/images/small_expanded_policy.jpg"/>
+    </div>
+
+    <div class="content has-text-justified">
+          <p>
+            While te first expansion is small eventually we will be able to cover the full range of start and goal states.
+          </p>
+    </div>
+
+    <div class="columns is-centered">
+      <img src="./static/images/large_expanded_policy.jpg"/>
+    </div>
+
+
+
+
+</section>
+  
 <hr>
 <section class="section">
   <div class="container is-max-desktop">
